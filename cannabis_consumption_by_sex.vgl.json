@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+  "description": "Current Marijuana Use in High School by Sex",
+  "data": {
+    "url": "./YRBS.csv"
+  },
+  "transform": [{"fold": ["female", "male"]}],
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "value", "type": "quantitative"},
+    "color": {"field": "key", "type": "nominal"}
+  }
+}

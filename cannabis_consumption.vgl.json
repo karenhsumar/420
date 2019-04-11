@@ -1,0 +1,12 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+  "description": "Current Marijuana Use in High School",
+  "data": {
+    "url": "./YRBS.csv"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "total", "type": "quantitative"}
+  }
+}
