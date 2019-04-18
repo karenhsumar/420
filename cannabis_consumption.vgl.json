@@ -1,12 +1,21 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
-  "description": "Current Marijuana Use in High School",
+  "description": "Percentage of high school students currently using marijuana. There were two waves of popularity in the last quarter century.",
   "data": {
     "url": "./YRBS.csv"
   },
-  "mark": "line",
+  "width": 700,
+  "height": 350,
+  "mark": {"type": "line", "point": true},
   "encoding": {
     "x": {"field": "year", "type": "ordinal"},
-    "y": {"field": "total", "type": "quantitative"}
+    "y": {
+      "field": "total",
+      "type": "quantitative",
+      "axis": {
+        "title": "% Currently Using Cannabis",
+        "format": ".1%"
+      }
+    }
   }
 }
