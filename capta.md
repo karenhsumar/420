@@ -6,7 +6,7 @@ they probably didn't anticipate the 4/20 meme to grow into an annual global
 celebration. But the origin story does hint at the prevalence of marijuana use
 in high school. Exactly how common is cannabis consumption for teens? Let's find out.
 
-*Note: Source code and data for this article, including all visualizations, are in this [Github repo](https://github.com/capta-journal/420). You can welcome to fork the repo, edit it, and republish your version within [capta.studio](https://www.capta.studio/publish).*
+*Note: Source code and data for this article, including all visualizations, are in this [Github repo](https://github.com/capta-journal/420). You are welcome to fork the repo, edit it, and republish your version within [capta.studio](https://www.capta.studio/publish).*
 
 The Youth Risk Behavior Surveillance System
 [(YRBSS)](https://www.cdc.gov/healthyyouth/data/yrbs/index.htm) is a biannual
