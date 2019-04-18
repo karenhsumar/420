@@ -6,6 +6,8 @@ they probably didn't anticipate the 4/20 meme to grow into an annual global
 celebration. But the origin story does hint at the prevalence of marijuana use
 in high school. Exactly how common is cannabis consumption for teens? Let's find out.
 
+*Note: Source code and data for this article, including all visualizations, are in this [Github repo](https://github.com/capta-journal/420). You can welcome to fork the repo, edit it, and republish your version within [capta.studio](https://www.capta.studio/publish).*
+
 The Youth Risk Behavior Surveillance System
 [(YRBSS)](https://www.cdc.gov/healthyyouth/data/yrbs/index.htm) is a biannual
 survey of high school students in the US, compiled by the Center for Disease
@@ -13,8 +15,6 @@ Control and Prevention (CDC). Its goal is to monitor risky behaviors that may
 contribute to health and social problems, and [one of the behaviors](https://nccd.cdc.gov/youthonline/App/Results.aspx?TT=L&OUT=0&SID=HS&QID=H48&LID=XX&YID=YY&LID2=&YID2=&COL=S&ROW1=N&ROW2=N&HT=QQ&LCT=LL&FS=S1&FR=R1&FG=G1&FA=A1&FI=I1&FP=P1&FSL=S1&FRL=R1&FGL=G1&FAL=A1&FIL=I1&FPL=P1&PV=&TST=False&C1=&C2=&QP=G&DP=1&VA=CI&CS=Y&SYID=1991&EYID=2017&SC=DEFAULT&SO=ASC)
 it has tracked since 1991 is whether a student is currently using
 marijuana^[Current use is defined as using one or more times during the 30 days before the survey.].
-
-(Put an aside here about the Github repo and how they can fork and reproduce this entire article.)
 
 ```{vgl file=./cannabis_consumption.vgl.json}
 ```
@@ -50,7 +50,7 @@ aggregate as well. A deeper study is needed to tease out various cause and effec
 ```{vgl file=./cannabis_consumption_by_sex.vgl.json}
 ```
 
-While the overall picture for cannabis consumption seem to have moderated from
+While the overall picture for cannabis consumption seems to have moderated from
 the late '90s, a deeper dive into the data shows many nuances within the
 general trend. For example, consider the
 sexes^[[YRBS data](https://nccd.cdc.gov/Youthonline/App/Results.aspx?TT=L&OUT=1&SID=HS&QID=H48&LID=XX&YID=YY&LID2=&YID2=&COL=S&ROW1=N&ROW2=N&HT=QQ&LCT=LL&FS=S1&FR=R1&FG=G1&FA=A1&FI=I1&FP=P1&FSL=S1&FRL=R1&FGL=G1&FAL=A1&FIL=I1&FPL=P1&PV=&TST=False&C1=&C2=&QP=G&DP=1&VA=CI&CS=Y&SYID=&EYID=&SC=DEFAULT&SO=ASC)].
@@ -63,7 +63,8 @@ consuming marijuana at their lowest rate (20.0%) since 1991.
 
 Cannabis culture also diverges between different
 ethnicities^[[YRBS data](https://nccd.cdc.gov/Youthonline/App/Results.aspx?TT=L&OUT=1&SID=HS&QID=H48&LID=XX&YID=YY&LID2=&YID2=&COL=R&ROW1=N&ROW2=N&HT=QQ&LCT=LL&FS=S1&FR=R1&FG=G1&FA=A1&FI=I1&FP=P1&FSL=S1&FRL=R1&FGL=G1&FAL=A1&FIL=I1&FPL=P1&PV=&TST=False&C1=&C2=&QP=G&DP=1&VA=CI&CS=Y&SYID=&EYID=&SC=DEFAULT&SO=ASC)].
-Native Americans are much more likely to use marijuana while Asian Americans
+Native Americans^[Labeled as AI/AN in the graph, meaning American Indians and Alaskan Natives]
+are much more likely to use marijuana while Asian Americans
 are much less likely. Whites, Hispanics, and African Americans have tracked
 each other in usage most of the time, up till about ten years ago.
 
@@ -73,9 +74,11 @@ suggests that the second wave of usage was below the peak of late '90s, that's
 not true for ethnic minorities. In fact, at the peak of the second wave, more
 Asian Americans and Native Americans were smoking than during the first wave.
 
-**So what drove the seeming decrease in consumption in the aggregate graph? It's entirely driven by White teens' lost of interest in cannabis.**
+**So what drove the seeming decrease in consumption in the aggregate? It's entirely due to White teens' lost of interest in cannabis.**
 As they are the majority in the population, they alone could bring down the
 overall trend. So what happened 10 years ago that led a resurgence of cannabis
-consumption in ethnic minorities but not White teens? I don't have any
+consumption for ethnic minorities but not White teens? I don't have any
 hypothesis. If you have any idea, join
 [the discussion on Github or submit a pull request to update this article](https://github.com/capta-journal/420/issues/1).
+
+*Self Promotion: capta.studio is a blogging platform for data journalism. The article you're reading is written entirely using Markdown, JSON, and data in CSV format. No Javascript, Python, R, or any other programming language is used. Publishes directly from Github, ensuring version control and reproducibility. All the code for this article are in this [Github repo](https://github.com/capta-journal/420). You are welcome to fork the repo, edit it, and republish your version within [capta.studio](https://www.capta.studio/publish). Or create a new repo and [publish](https://www.capta.studio/publish) your own article!*
