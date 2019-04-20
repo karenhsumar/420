@@ -6,7 +6,6 @@
   },
   "width": 700,
   "height": 350,
-  "mark": {"type": "line", "point": true},
   "encoding": {
     "x": {"field": "year", "type": "ordinal"},
     "y": {
@@ -17,5 +16,28 @@
         "format": ".1%"
       }
     }
-  }
+  },
+  "layer": [{
+    "mark": "line"
+  }, {
+    "selection": {
+      "index": {
+        "type": "single",
+        "on": "mousemove",
+        "encodings": ["x"],
+        "nearest": true
+      }
+    },
+    "mark": "circle"
+  }, {
+    "transform": [{
+      "filter": {
+        "and": ["index.year", {"selection": "index"}]
+      }
+    }],
+    "mark": "circle",
+    "encoding": {
+      "size": {"value": 600}
+    }
+  }]
 }
