@@ -1,8 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
   "description": "Current Marijuana Use in High School by Ethnicity",
-  "width": 700,
-  "height": 350,
   "data": {
     "url": "./YRBS.csv"
   },

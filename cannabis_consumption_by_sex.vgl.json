@@ -5,8 +5,6 @@
     "url": "./YRBS.csv"
   },
   "transform": [{"fold": ["female", "male"]}],
-  "width": 700,
-  "height": 350,
   "mark": {"type": "line", "point": true},
   "encoding": {
     "x": {"field": "year", "type": "ordinal"},

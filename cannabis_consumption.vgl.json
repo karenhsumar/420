@@ -4,8 +4,6 @@
   "data": {
     "url": "./YRBS.csv"
   },
-  "width": 700,
-  "height": 350,
   "encoding": {
     "x": {"field": "year", "type": "ordinal"},
     "y": {
